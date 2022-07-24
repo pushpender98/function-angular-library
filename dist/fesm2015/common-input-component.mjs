@@ -1,5 +1,5 @@
 import * as i0 from '@angular/core';
-import { EventEmitter, Component, Output, NgModule } from '@angular/core';
+import { EventEmitter, Component, Output, NgModule, Injectable } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 class ButtonComponent {
@@ -40,9 +40,24 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.0.3", ngImpor
                 }]
         }] });
 
+class FuntionsService {
+    constructor() { }
+    getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+}
+FuntionsService.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.0.3", ngImport: i0, type: FuntionsService, deps: [], target: i0.ɵɵFactoryTarget.Injectable });
+FuntionsService.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "13.0.3", ngImport: i0, type: FuntionsService, providedIn: 'root' });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.0.3", ngImport: i0, type: FuntionsService, decorators: [{
+            type: Injectable,
+            args: [{
+                    providedIn: 'root'
+                }]
+        }], ctorParameters: function () { return []; } });
+
 /**
  * Generated bundle index. Do not edit.
  */
 
-export { ButtonComponent, ButtonModule };
+export { ButtonComponent, ButtonModule, FuntionsService };
 //# sourceMappingURL=common-input-component.mjs.map
