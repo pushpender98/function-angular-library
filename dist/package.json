@@ -1,0 +1,38 @@
+{
+  "name": "common-input-component",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~13.0.0",
+    "@angular/common": "~13.0.0",
+    "@angular/compiler": "~13.0.0",
+    "@angular/core": "~13.0.0",
+    "@angular/forms": "~13.0.0",
+    "@angular/platform-browser": "~13.0.0",
+    "@angular/platform-browser-dynamic": "~13.0.0",
+    "@angular/router": "~13.0.0",
+    "rxjs": "~7.4.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4"
+  },
+  "module": "fesm2015/common-input-component.mjs",
+  "es2020": "fesm2020/common-input-component.mjs",
+  "esm2020": "esm2020/common-input-component.mjs",
+  "fesm2020": "fesm2020/common-input-component.mjs",
+  "fesm2015": "fesm2015/common-input-component.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/common-input-component.mjs",
+      "es2020": "./fesm2020/common-input-component.mjs",
+      "es2015": "./fesm2015/common-input-component.mjs",
+      "node": "./fesm2015/common-input-component.mjs",
+      "default": "./fesm2020/common-input-component.mjs"
+    }
+  },
+  "sideEffects": false
+}
